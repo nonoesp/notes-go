@@ -1,7 +1,12 @@
 # notes-go
-Notes of Go.
 
-## Resources
+On Jan 30, 2017, I decided to dive into Go. These notes were extremely helpful to learn. I hope they are for you too.
+
+## Reading
+
+* [Embrace Go – A modern programming language](https://developer.washingtonpost.com/pb/blog/post/2016/04/06/embrace-go/) by Samaresh Panda on The Washington Post
+
+## Videos
 
 * [Writing, building, installing, and testing Go code](https://www.youtube.com/watch?v=XCsL89YtqCs)
 
