@@ -10,6 +10,12 @@ On Jan 30, 2017, I decided to dive into Go. These notes were extremely helpful t
 
 * [Writing, building, installing, and testing Go code](https://www.youtube.com/watch?v=XCsL89YtqCs)
 
+## Projects
+
+* [Docker](https://www.docker.com/). “Build, Ship, and Run Any App, Anywhere.”
+
+## Go Lang
+
 ## Me
 
 I'm [Nono Martínez Alonso](http://nono.ma) ([nono.ma](http://nono.ma)), a computational designer with a penchant for design, code, and simplicity.  
