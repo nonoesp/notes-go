@@ -9,6 +9,7 @@ Hi there! I'm [nono.ma](http://nono.ma). On Jan 30, 2017, I decided to dive into
 
 ## Videos
 
+* [Go: a simple programming environment](https://vimeo.com/69237265) by Andrew Gerrand at Railsberry 2013 - extremely useful examples well explained.
 * [Writing, building, installing, and testing Go code](https://www.youtube.com/watch?v=XCsL89YtqCs)
 
 ## Projects
