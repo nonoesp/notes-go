@@ -21,7 +21,16 @@ On Jan 30, 2017, I decided to dive into Go. These notes were extremely helpful t
 ```go
 byteArray := []byte(aString)
 ```
+### Formatting A String with Numbers
 
+```go
+	var number = 30
+	var phrase = "My number is"
+	var stringA = phrase + " " + strconv.Itoa(number) + "." // My number is 30.
+	var stringB = fmt.Sprintf("%s %v.", phrase, number) // My number is 30.
+	fmt.Println(stringA)
+	fmt.Println(stringB)
+```
 
 ## Me
 
