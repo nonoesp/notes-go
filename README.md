@@ -1,6 +1,6 @@
 # notes-go
 
-On Jan 30, 2017, I decided to dive into Go. These notes were extremely helpful to learn. I hope they are for you too.
+On Jan 30, 2017, I decided to dive into Go. These notes were extremely helpful to learn and include recommended reads, videos, and resources I found along the way. I hope you find them useful.
 
 ## Reading
 
