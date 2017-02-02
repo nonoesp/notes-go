@@ -16,6 +16,13 @@ On Jan 30, 2017, I decided to dive into Go. These notes were extremely helpful t
 
 ## Go Lang
 
+### String to byte[]
+
+```go
+byteArray := []byte(aString)
+```
+
+
 ## Me
 
 I'm [Nono Martínez Alonso](http://nono.ma) ([nono.ma](http://nono.ma)), a computational designer with a penchant for design, code, and simplicity.  
