@@ -1,4 +1,4 @@
-# notes-go
+# Notes of Go
 
 Hi there! I'm [nono.ma](http://nono.ma). On Jan 30, 2017, I decided to dive into Go. These notes were extremely helpful for me to start going, and include recommended reads, videos, and resources I found along the way. I hope you find them useful.
 
