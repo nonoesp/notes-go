@@ -5,6 +5,7 @@ On Jan 30, 2017, I decided to dive into Go. These notes were extremely helpful t
 ## Reading
 
 * [Embrace Go – A modern programming language](https://developer.washingtonpost.com/pb/blog/post/2016/04/06/embrace-go/) by Samaresh Panda on The Washington Post
+* [Four Years of Go](https://blog.golang.org/4years)
 
 ## Videos
 
