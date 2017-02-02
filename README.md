@@ -12,7 +12,8 @@ On Jan 30, 2017, I decided to dive into Go. These notes were extremely helpful t
 
 ## Projects
 
-* [Docker](https://www.docker.com/). “Build, Ship, and Run Any App, Anywhere.”
+* [Docker](https://www.docker.com/) - “Build, Ship, and Run Any App, Anywhere.”
+* [Sky](https://github.com/Shopify/sky) - an open source, behavioral analytics database.
 
 ## Go Lang
 
