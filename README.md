@@ -14,11 +14,13 @@ Hi there! I'm [nono.ma](http://nono.ma). On Jan 30, 2017, I decided to dive into
 
 ## Packages
 
+* [blackfriday](http://github.com/russross/blackfriday) - markdown parser.
 * [expvar](https://golang.org/pkg/expvar/) - "a standardized interface to public variables, such as operation counters in servers. It exposes these variables via HTTP at /debug/vars in JSON format."
 * [kv](https://github.com/cznic/kv) - simple and easy to use persistent key/value (KV) store.
-* [blackfriday](http://github.com/russross/blackfriday) - markdown parser.
+* [logrus](https://github.com/Sirupsen/logrus) - "Structured, pluggable logging for Go."
 * [ql](https://github.com/cznic/ql) - pure Go embedded SQL database.
 * [sky](https://github.com/Shopify/sky) - an open source, behavioral analytics database.
+* [redis](https://github.com/garyburd/redigo/) - Go client for Redis. ("Redis is an open-source, in-memory data structure store, used as a database, cache and message broker.")
 
 ## Tools
 
