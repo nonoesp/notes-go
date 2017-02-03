@@ -12,11 +12,12 @@ Hi there! I'm [nono.ma](http://nono.ma). On Jan 30, 2017, I decided to dive into
 * [Go: a simple programming environment](https://vimeo.com/69237265) by Andrew Gerrand at Railsberry 2013. Useful, well-explained examples.
 * [Writing, building, installing, and testing Go code](https://www.youtube.com/watch?v=XCsL89YtqCs)
 
-## Projects
+## Packages
 
-* [Sky](https://github.com/Shopify/sky) - an open source, behavioral analytics database.
+* [expvar](https://golang.org/pkg/expvar/) - "a standardized interface to public variables, such as operation counters in servers. It exposes these variables via HTTP at /debug/vars in JSON format."
 * [kv](https://github.com/cznic/kv) - simple and easy to use persistent key/value (KV) store.
 * [ql](https://github.com/cznic/ql) - pure Go embedded SQL database.
+* [sky](https://github.com/Shopify/sky) - an open source, behavioral analytics database.
 
 ## Tools
 
