@@ -4,13 +4,13 @@ Hi there! I'm [nono.ma](http://nono.ma). On Jan 30, 2017, I decided to dive into
 
 ## Reading
 
-* [Embrace Go – A modern programming language](https://developer.washingtonpost.com/pb/blog/post/2016/04/06/embrace-go/) by Samaresh Panda on The Washington Post
-* [Four Years of Go](https://blog.golang.org/4years)
+* [Embrace Go – A modern programming language](https://developer.washingtonpost.com/pb/blog/post/2016/04/06/embrace-go/) by Samaresh Panda on The Washington Post.
+* [Four Years of Go](https://blog.golang.org/4years).
 
 ## Videos
 
 * [Go: a simple programming environment](https://vimeo.com/69237265) by Andrew Gerrand at Railsberry 2013. Useful, well-explained examples.
-* [Writing, building, installing, and testing Go code](https://www.youtube.com/watch?v=XCsL89YtqCs)
+* [Writing, building, installing, and testing Go code](https://www.youtube.com/watch?v=XCsL89YtqCs).
 
 ## Packages
 
@@ -23,7 +23,11 @@ Hi there! I'm [nono.ma](http://nono.ma). On Jan 30, 2017, I decided to dive into
 
 * [JSON-to-Go](https://mholt.github.io/json-to-go/) - Convert JSON to Go instantly.
 
-## Go Lang
+## Specific Readings
+
+* [Create A Real Time Chat App With Golang, Angular 2, And Websockets](https://www.thepolyglotdeveloper.com/2016/12/create-real-time-chat-app-golang-angular-2-websockets/)
+
+## Golang
 
 ### String to byte[]
 
