@@ -27,6 +27,7 @@ Hi there! I'm [nono.ma](http://nono.ma). On Jan 30, 2017, I decided to dive into
 ## Specific Readings
 
 * [Create A Real Time Chat App With Golang, Angular 2, And Websockets](https://www.thepolyglotdeveloper.com/2016/12/create-real-time-chat-app-golang-angular-2-websockets/)
+* [Go Websockets (Gin-gonic + Gorilla)](http://arlimus.github.io/articles/gin.and.gorilla/).
 
 ## Golang
 
