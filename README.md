@@ -19,7 +19,7 @@ Hi there! I'm [nono.ma](http://nono.ma). On Jan 30, 2017, I decided to dive into
 * [kv](https://github.com/cznic/kv) - simple and easy to use persistent key/value (KV) store.
 * [logrus](https://github.com/Sirupsen/logrus) - "Structured, pluggable logging for Go."
 * [ql](https://github.com/cznic/ql) - pure Go embedded SQL database.
-* [redigo](https://github.com/garyburd/redigo/) - Go client for Redis. ("Redis is an open-source, in-memory data structure store, used as a database, cache and message broker.")
+* [redigo](https://github.com/garyburd/redigo/) - Go client for Redis. ("Redis is an open-source, in-memory data structure store, used as a database, cache and message broker.") ([Redis Quick Start Quide](https://redis.io/topics/quickstart))
 * [sky](https://github.com/Shopify/sky) - an open source, behavioral analytics database.
 
 ## Tools
