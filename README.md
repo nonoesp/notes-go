@@ -35,8 +35,10 @@ Hi there! I'm [nono.ma](http://nono.ma). On Jan 30, 2017, I decided to dive into
 * [gin](https://github.com/gin-gonic/gin) - HTTP web framework. Martini-like API (with better performance; 40x).
 * [gjson](https://github.com/tidwall/gjson) - “Get JSON values very quickly in Go.” Allows to access JSON values directly from a string, byte slice, obtain multiple values at once, etc. by just specifying a path with dot notation (e.g. `name.last`).
 * [godotenv](http://github.com/joho/godotenv) - load environment variables from the `.env` file.
+* [go-hashids](https://github.com/speps/go-hashids) - a Go implementation of <www.hashids.org>.
 * [kv](https://github.com/cznic/kv) - simple and easy to use persistent key/value (KV) store.
 * [logrus](https://github.com/Sirupsen/logrus) - "Structured, pluggable logging for Go."
+* [mgo](http://gopkg.in/mgo.v2) - “Rich MongoDB driver for Go.” ([Sample code](https://gist.github.com/border/3489566).)
 * [ql](https://github.com/cznic/ql) - pure Go embedded SQL database.
 * [redigo](https://github.com/garyburd/redigo/) - Go client for Redis. ("Redis is an open-source, in-memory data structure store, used as a database, cache and message broker.") ([Redis Quick Start Quide](https://redis.io/topics/quickstart).)
 * [sky](https://github.com/Shopify/sky) - an open source, behavioral analytics database.
