@@ -16,6 +16,8 @@ Hi there! I'm [nono.ma](http://nono.ma). On Jan 30, 2017, I decided to dive into
 
 * [blackfriday](http://github.com/russross/blackfriday) - markdown parser.
 * [expvar](https://golang.org/pkg/expvar/) - "a standardized interface to public variables, such as operation counters in servers. It exposes these variables via HTTP at /debug/vars in JSON format."
+* [gjson](https://github.com/tidwall/gjson) - “Get JSON values very quickly in Go.” Allows to access JSON values directly from a string, byte slice, obtain multiple values at once, etc. by just specifying a path with dot notation (e.g. `name.last`).
+* [godotenv](github.com/joho/godotenv) - load environment variables from the `.env` file.
 * [kv](https://github.com/cznic/kv) - simple and easy to use persistent key/value (KV) store.
 * [logrus](https://github.com/Sirupsen/logrus) - "Structured, pluggable logging for Go."
 * [ql](https://github.com/cznic/ql) - pure Go embedded SQL database.
@@ -28,8 +30,9 @@ Hi there! I'm [nono.ma](http://nono.ma). On Jan 30, 2017, I decided to dive into
 
 ## Specific Readings
 
-* [Create A Real Time Chat App With Golang, Angular 2, And Websockets](https://www.thepolyglotdeveloper.com/2016/12/create-real-time-chat-app-golang-angular-2-websockets/)
+* [Create A Real Time Chat App With Golang, Angular 2, And Websockets](https://www.thepolyglotdeveloper.com/2016/12/create-real-time-chat-app-golang-angular-2-websockets/).
 * [Go Websockets (Gin-gonic + Gorilla)](http://arlimus.github.io/articles/gin.and.gorilla/).
+* [Parse Complicated JSON with Go Unmarshal?](http://stackoverflow.com/questions/30341588/how-to-parse-a-complicated-json-with-go-lang-unmarshal) at StackOverflow.
 
 ## Golang
 
@@ -38,6 +41,7 @@ Hi there! I'm [nono.ma](http://nono.ma). On Jan 30, 2017, I decided to dive into
 ```go
 byteArray := []byte(aString)
 ```
+
 ### Formatting A String with Numbers
 
 ```go
@@ -45,6 +49,89 @@ var number = 30
 var phrase = "My number is"
 var stringA = phrase + " " + strconv.Itoa(number) + "." // My number is 30.
 var stringB = fmt.Sprintf("%s %v.", phrase, number) // My number is 30.
+```
+
+### Structs
+
+Go structs resemble the structure of JSON objects. For instance, we can define a `person` struct. Because the name of the struct is lowercase, it won’t be exported and shared between `.go` files of your application.
+
+```go
+type person struct {
+		Name		string
+		Age			int
+}
+```
+
+We can share a struct between files of an application by capitalizing its name, and we can also specify the name each field should have when parsed into JSON.
+
+```go
+type Sphere struct {
+		Origin				float64		`json:"origin"`
+		Radius				float64		`json:"radius"`
+}
+```
+
+## Library Samples
+
+### gin
+
+The following are examples from the official repository. Some of them are modified and others are exactly like they were.
+
+```go
+package main
+
+import "github.com/gin-gonic/gin"
+
+func main() {
+    r := gin.Default()
+    r.GET("/ping", func(c *gin.Context) {
+        c.JSON(200, gin.H{
+            "message": "pong",
+        })
+    })
+    r.Run() // listen and serve on 0.0.0.0:8080
+}
+```
+
+#### Serving Static Files
+
+```go
+func main() {
+    router := gin.Default()
+    router.Static("/css", "./public/css")
+    router.StaticFS("/more_static", http.Dir("my_file_system"))
+    router.StaticFile("/favicon.ico", "./resources/favicon.ico")
+    router.Run()
+}
+```
+
+### godotenv
+
+`go get github.com/joho/godotenv`
+
+Your `.env` file might look like this:
+
+```
+PORT=8080
+REDIS_URL=redis://localhost:6379
+```
+
+Let’s try loading the content of the `.env` file as environment variables. (Usually, this is done at the beginning of your `main` function.)
+
+```go
+	err := godotenv.Load()
+  if err != nil {
+    log.Fatal("Error loading .env file")
+  }
+```
+
+All of your `.env` variables will be available as every other environment variable:
+
+```go
+	port := os.Getenv("PORT")
+	if port == "" {
+		log.WithField("PORT", port).Fatal("$PORT must be set")
+	}
 ```
 
 ## Me
