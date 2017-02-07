@@ -10,10 +10,14 @@ Hi there! I'm [nono.ma](http://nono.ma). On Jan 30, 2017, I decided to dive into
 * [Tools](#tools)
 * [Specific Reading](#specific-reading)
 * [Syntax](#syntax)
+* [Examples](#examples-with-library-snippets)
+
+<!-- 
 * [Examples with Library Snippets](#examples-with-library-snippets)
 * [Examples with play.golang.org](#examples-with-playgolangorg)
 * [Examples with Go By Example](#examples-with-go-by-example)
-
+ -->
+ 
 ## Reading
 
 * [Embrace Go – A modern programming language](https://developer.washingtonpost.com/pb/blog/post/2016/04/06/embrace-go/) by Samaresh Panda on The Washington Post.
