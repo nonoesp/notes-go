@@ -57,8 +57,8 @@ Go structs resemble the structure of JSON objects. For instance, we can define a
 
 ```go
 type person struct {
-		Name		string
-		Age			int
+	Name	string
+	Age		int
 }
 ```
 
@@ -66,8 +66,8 @@ We can share a struct between files of an application by capitalizing its name, 
 
 ```go
 type Sphere struct {
-		Origin				float64		`json:"origin"`
-		Radius				float64		`json:"radius"`
+	Origin	float64	`json:"origin"`
+	Radius	float64	`json:"radius"`
 }
 ```
 
@@ -107,9 +107,7 @@ func main() {
 
 ### godotenv
 
-`go get github.com/joho/godotenv`
-
-Your `.env` file might look like this:
+Install with `go get github.com/joho/godotenv`. Your `.env` file might look like this:
 
 ```
 PORT=8080
