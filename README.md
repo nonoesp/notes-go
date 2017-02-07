@@ -72,7 +72,7 @@ type Sphere struct {
 }
 ```
 
-## Library Samples
+## Library Snippets
 
 ### gin
 
@@ -142,7 +142,7 @@ All of your `.env` variables will be available as every other environment variab
 	}
 ```
 
-## <play.golang.org>
+## [play.golang.org](play.golang.org)
 
 * Blocking Channels with [string](https://play.golang.org/p/hGCtCoxZhO) or [int](https://play.golang.org/p/wfjgXvphSg).
 
