@@ -16,6 +16,7 @@ Hi there! I'm [nono.ma](http://nono.ma). On Jan 30, 2017, I decided to dive into
 
 * [blackfriday](http://github.com/russross/blackfriday) - markdown parser.
 * [expvar](https://golang.org/pkg/expvar/) - "a standardized interface to public variables, such as operation counters in servers. It exposes these variables via HTTP at /debug/vars in JSON format."
+* [gin](https://github.com/gin-gonic/gin) - HTTP web framework. Martini-like API (with better performance; 40x).
 * [gjson](https://github.com/tidwall/gjson) - “Get JSON values very quickly in Go.” Allows to access JSON values directly from a string, byte slice, obtain multiple values at once, etc. by just specifying a path with dot notation (e.g. `name.last`).
 * [godotenv](http://github.com/joho/godotenv) - load environment variables from the `.env` file.
 * [kv](https://github.com/cznic/kv) - simple and easy to use persistent key/value (KV) store.
@@ -105,6 +106,15 @@ func main() {
 }
 ```
 
+### gjson
+
+```go
+  json := `{"name":{"first":"Nono","last":"Martinez"},"age":26,"web":"nono.ma"}`
+  firstname := gjson.Get(json, "name.first")
+  web := gjson.Get(json, "web")
+  println(firstname.String(),web.String())
+```
+
 ### godotenv
 
 Install with `go get github.com/joho/godotenv`. Your `.env` file might look like this:
@@ -131,6 +141,14 @@ All of your `.env` variables will be available as every other environment variab
 		log.WithField("PORT", port).Fatal("$PORT must be set")
 	}
 ```
+
+## <play.golang.org>
+
+* Blocking Channels with [string](https://play.golang.org/p/hGCtCoxZhO) or [int](https://play.golang.org/p/wfjgXvphSg).
+
+## Go By Example
+
+* [Closing Channels](https://gobyexample.com/closing-channels)
 
 ## Me
 
