@@ -2,6 +2,18 @@
 
 Hi there! I'm [nono.ma](http://nono.ma). On Jan 30, 2017, I decided to dive into Go. These notes were extremely helpful for me to start going, and include recommended reads, videos, and resources I found along the way. I hope you find them useful.
 
+## Contents
+
+* [Reading](#reading)
+* [Videos](#videos)
+* [Packages](#packages)
+* [Tools](#tools)
+* [Specific Reading](#specific-reading)
+* [Syntax](#syntax)
+* [Examples with Library Snippets](#examples-library-snippets)
+* [Examples with play.golang.org](#examples-playgolangorg)
+* [Examples with Go By Example](#examples-go-by-example)
+
 ## Reading
 
 * [Embrace Go – A modern programming language](https://developer.washingtonpost.com/pb/blog/post/2016/04/06/embrace-go/) by Samaresh Panda on The Washington Post.
@@ -29,13 +41,13 @@ Hi there! I'm [nono.ma](http://nono.ma). On Jan 30, 2017, I decided to dive into
 
 * [JSON-to-Go](https://mholt.github.io/json-to-go/) - Convert JSON to Go instantly.
 
-## Specific Readings
+## Specific Reading
 
 * [Create A Real Time Chat App With Golang, Angular 2, And Websockets](https://www.thepolyglotdeveloper.com/2016/12/create-real-time-chat-app-golang-angular-2-websockets/).
 * [Go Websockets (Gin-gonic + Gorilla)](http://arlimus.github.io/articles/gin.and.gorilla/).
 * [Parse Complicated JSON with Go Unmarshal?](http://stackoverflow.com/questions/30341588/how-to-parse-a-complicated-json-with-go-lang-unmarshal) at StackOverflow.
 
-## Golang
+## Syntax
 
 ### String to byte[]
 
@@ -72,7 +84,7 @@ type Sphere struct {
 }
 ```
 
-## Examples: Library Snippets
+## Examples with Library Snippets
 
 ### gin
 
@@ -142,11 +154,11 @@ All of your `.env` variables will be available as every other environment variab
 	}
 ```
 
-## Examples: [play.golang.org](http://play.golang.org)
+## Examples with [play.golang.org](http://play.golang.org)
 
 * Blocking Channels with [string](https://play.golang.org/p/hGCtCoxZhO) or [int](https://play.golang.org/p/wfjgXvphSg).
 
-## Examples: [Go By Example](http://gobyexample.com)
+## Examples with [Go By Example](http://gobyexample.com)
 
 * [Closing Channels](https://gobyexample.com/closing-channels)
 
