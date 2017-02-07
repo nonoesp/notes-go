@@ -17,7 +17,7 @@ Hi there! I'm [nono.ma](http://nono.ma). On Jan 30, 2017, I decided to dive into
 * [blackfriday](http://github.com/russross/blackfriday) - markdown parser.
 * [expvar](https://golang.org/pkg/expvar/) - "a standardized interface to public variables, such as operation counters in servers. It exposes these variables via HTTP at /debug/vars in JSON format."
 * [gjson](https://github.com/tidwall/gjson) - “Get JSON values very quickly in Go.” Allows to access JSON values directly from a string, byte slice, obtain multiple values at once, etc. by just specifying a path with dot notation (e.g. `name.last`).
-* [godotenv](github.com/joho/godotenv) - load environment variables from the `.env` file.
+* [godotenv](http://github.com/joho/godotenv) - load environment variables from the `.env` file.
 * [kv](https://github.com/cznic/kv) - simple and easy to use persistent key/value (KV) store.
 * [logrus](https://github.com/Sirupsen/logrus) - "Structured, pluggable logging for Go."
 * [ql](https://github.com/cznic/ql) - pure Go embedded SQL database.
