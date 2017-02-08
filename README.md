@@ -35,7 +35,7 @@ Hi there! I'm [nono.ma](http://nono.ma). On Jan 30, 2017, I decided to dive into
 * [gin](https://github.com/gin-gonic/gin) - HTTP web framework. Martini-like API (with better performance; 40x).
 * [gjson](https://github.com/tidwall/gjson) - “Get JSON values very quickly in Go.” Allows to access JSON values directly from a string, byte slice, obtain multiple values at once, etc. by just specifying a path with dot notation (e.g. `name.last`).
 * [godotenv](http://github.com/joho/godotenv) - load environment variables from the `.env` file.
-* [go-hashids](https://github.com/speps/go-hashids) - a Go implementation of <www.hashids.org>.
+* [go-hashids](https://github.com/speps/go-hashids) - a Go implementation of [www.hashids.org](http://www.hashids.org).
 * [kv](https://github.com/cznic/kv) - simple and easy to use persistent key/value (KV) store.
 * [logrus](https://github.com/Sirupsen/logrus) - "Structured, pluggable logging for Go."
 * [mgo](http://gopkg.in/mgo.v2) - “Rich MongoDB driver for Go.” ([Sample code](https://gist.github.com/border/3489566).)
@@ -160,13 +160,11 @@ All of your `.env` variables will be available as every other environment variab
 	}
 ```
 
-## Examples with [play.golang.org](http://play.golang.org)
+## Examples on [play.golang.org](http://play.golang.org), [Go By Example](http://gobyexample.com), and more
 
-* Blocking Channels with [string](https://play.golang.org/p/hGCtCoxZhO) or [int](https://play.golang.org/p/wfjgXvphSg).
-
-## Examples with [Go By Example](http://gobyexample.com)
-
-* [Closing Channels](https://gobyexample.com/closing-channels)
+* play.golang.org - Blocking Channels with [string](https://play.golang.org/p/hGCtCoxZhO) or [int](https://play.golang.org/p/wfjgXvphSg).
+* Go By Example - [Closing Channels](https://gobyexample.com/closing-channels)
+- Go Blueprints - [Chat Example](https://github.com/matryer/goblueprints/tree/master/chapter3/chat) (Chapter 3)
 
 ## Me
 
