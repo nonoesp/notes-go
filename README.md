@@ -43,6 +43,10 @@ Hi there! I'm [nono.ma](http://nono.ma). On Jan 30, 2017, I decided to dive into
 * [redigo](https://github.com/garyburd/redigo/) - Go client for Redis. ("Redis is an open-source, in-memory data structure store, used as a database, cache and message broker.") ([Redis Quick Start Quide](https://redis.io/topics/quickstart).)
 * [sky](https://github.com/Shopify/sky) - an open source, behavioral analytics database.
 
+https://github.com/gorilla/schema Package gorilla/schema fills a struct with form values.
+
+http://www.gorillatoolkit.org/pkg/feeds Syndication (feed) generator library
+
 ## Tools
 
 * [JSON-to-Go](https://mholt.github.io/json-to-go/) - Convert JSON to Go instantly.
@@ -133,6 +137,70 @@ func main() {
   println(firstname.String(),web.String())
 ```
 
+### encoding/json
+
+A problem I’ve been having lately is to receive relatively *flexible* JSON data from a client and convert it — unmarshal it — into a pure Go struct.
+
+Let’s say our JSON looks something like this:
+
+```json
+{
+	"action": string,
+	"data":{
+		"x": int,
+		"y": int
+	}
+}
+```
+
+So a sample JSON object of a received message might look like:
+
+```json
+{
+	"action":"click",
+	"data":{
+		"x":75,
+		"y":40
+	}
+}
+```
+
+In our Go program, we want to work with as many native structs as we can, so we have the struct `Message`.
+
+```go
+type Message struct {
+	Action	string		`json:"action"
+	Data	interface{}		`json:"data"	
+}
+```
+
+Here, we *have* to leave our `Data` property with an `interface{}` type, which leaves it open for different types of data.
+
+In the previous example, the data sent matches with the following `Point` struct.
+
+```go
+type Point struct {
+	X	Int	`json:"x"`
+	Y	Int	`json:"y"`
+}
+```
+
+Then comes the magic. We first get the string of JSON that contains our `data` and then convert it to bytes to call `json.Unmarshal` on it.
+
+```go
+data := gjson.GetBytes(message, "data")
+
+var point Point
+err := json.Unmarshal([]byte(data.String()), &point)
+if err != nil {
+println("error: could not unmarshal")
+} else {
+fmt.Println("point",point)
+fmt.Println("point.X",point.X)
+fmt.Println("point.Y",point.Y)
+}
+```
+
 ### godotenv
 
 Install with `go get github.com/joho/godotenv`. Your `.env` file might look like this:
@@ -163,6 +231,7 @@ All of your `.env` variables will be available as every other environment variab
 ## Examples on [play.golang.org](http://play.golang.org), [Go By Example](http://gobyexample.com), and more
 
 * play.golang.org - Blocking Channels with [string](https://play.golang.org/p/hGCtCoxZhO) or [int](https://play.golang.org/p/wfjgXvphSg).
+* play.golang.org - [Unmarshal JSON which structure isn't defined by a Go struct](https://play.golang.org/p/gfP6P4SmaC)
 * Go By Example - [Closing Channels](https://gobyexample.com/closing-channels)
 - Go Blueprints - [Chat Example](https://github.com/matryer/goblueprints/tree/master/chapter3/chat) (Chapter 3)
 
