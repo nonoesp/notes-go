@@ -8,7 +8,7 @@ Hi there! I'm [nono.ma](http://nono.ma). On Jan 30, 2017, I decided to dive into
 * [Videos](#videos)
 * [Packages](#packages)
 * [Tools](#tools)
-* [Specific Reading](#specific-reading)
+* [Resources](#resources)
 * [Syntax](#syntax)
 * [Examples](#examples-with-library-snippets)
 
@@ -51,11 +51,12 @@ http://www.gorillatoolkit.org/pkg/feeds Syndication (feed) generator library
 
 * [JSON-to-Go](https://mholt.github.io/json-to-go/) - Convert JSON to Go instantly.
 
-## Specific Reading
+## Resources
 
 * [Create A Real Time Chat App With Golang, Angular 2, And Websockets](https://www.thepolyglotdeveloper.com/2016/12/create-real-time-chat-app-golang-angular-2-websockets/).
 * [Go Websockets (Gin-gonic + Gorilla)](http://arlimus.github.io/articles/gin.and.gorilla/).
 * [Parse Complicated JSON with Go Unmarshal?](http://stackoverflow.com/questions/30341588/how-to-parse-a-complicated-json-with-go-lang-unmarshal) at StackOverflow.
+* [Go Podcasts](https://github.com/golang/go/wiki/Podcasts)
 
 ## Syntax
 
