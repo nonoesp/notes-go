@@ -43,6 +43,11 @@ Hi there! I'm [nono.ma](http://nono.ma). On Jan 30, 2017, I decided to dive into
 * [redigo](https://github.com/garyburd/redigo/) - Go client for Redis. ("Redis is an open-source, in-memory data structure store, used as a database, cache and message broker.") ([Redis Quick Start Quide](https://redis.io/topics/quickstart).)
 * [sky](https://github.com/Shopify/sky) - an open source, behavioral analytics database.
 
+***
+
+* https://github.com/zmb3/spotify
+* https://github.com/everdev/mack
+
 https://github.com/gorilla/schema Package gorilla/schema fills a struct with form values.
 
 http://www.gorillatoolkit.org/pkg/feeds Syndication (feed) generator library
@@ -227,6 +232,16 @@ All of your `.env` variables will be available as every other environment variab
 	if port == "" {
 		log.WithField("PORT", port).Fatal("$PORT must be set")
 	}
+```
+
+## govendor
+
+Manage your project dependencies locally with `govendor`.
+
+Add the following to your project’s `.gitignore` to ensure that dependencies are ignored but your `vendor.json` is still pushed to your repository. If you clone your repository, a simple `go vendor sync` will do to fetch back all dependencies.
+
+```
+vendor/*/
 ```
 
 ## Examples on [play.golang.org](http://play.golang.org), [Go By Example](http://gobyexample.com), and more
